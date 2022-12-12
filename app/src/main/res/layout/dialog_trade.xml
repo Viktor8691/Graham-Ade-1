@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingHorizontal="@dimen/vertical_baseline"
+    android:background="@drawable/bg_white_rect">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/trade"
+        style="@style/big_title_style"
+        android:layout_marginTop="25dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="15dp"
+        android:background="@drawable/bg_white_grey_rect"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/txvStockName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stock name"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/txvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$1,500 USD"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txvVolAndPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Available 5 AAPL - $7,500 USD"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txvBuy"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/bg_blue_rect"
+        android:text="@string/buy"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_font_size"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/txvSell"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@drawable/bg_blue_border_rect"
+        android:text="@string/sell"
+        android:gravity="center"
+        android:textSize="@dimen/button_font_size"
+        android:textColor="@color/blue"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/txvCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/cancel"
+        android:textSize="16sp"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingVertical="20dp"
+        android:layout_marginVertical="20dp"/>
+
+</LinearLayout>

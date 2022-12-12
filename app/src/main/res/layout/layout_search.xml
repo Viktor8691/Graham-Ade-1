@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="@dimen/vertical_baseline">
+
+        <EditText
+            android:id="@+id/edtSearchText"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/bg_white_grey_rect"
+            android:paddingHorizontal="@dimen/edittext_horizontal_padding"
+            android:paddingVertical="3dp"
+            android:drawableLeft="@drawable/ic_search"
+            android:textSize="@dimen/edittext_font_size"/>
+
+        <ImageView
+            android:id="@+id/imvMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chat"
+            android:paddingHorizontal="5dp"
+            android:layout_marginLeft="10dp"/>
+
+        <ImageView
+            android:id="@+id/imvNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_notification"
+            android:paddingHorizontal="5dp" />
+
+        <ImageView
+            android:id="@+id/imvSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_setting"
+            android:paddingVertical="10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lytSearchTab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        android:paddingHorizontal="@dimen/vertical_baseline"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/txvPeople"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/people"
+            android:gravity="center"
+            android:background="@drawable/bg_orange_round"
+            android:textColor="@color/white"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="6dp"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/txvCompany"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/company"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="6dp"
+            android:textSize="13sp"/>
+
+        <TextView
+            android:id="@+id/txvGroup"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/group"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="6dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_grey1"
+        android:layout_marginTop="10dp"
+        android:textSize="13sp"/>
+
+</LinearLayout>
